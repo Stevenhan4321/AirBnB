@@ -1,0 +1,84 @@
+﻿"Cube Title","Product Id","CANSIM Id",URL,"Cube Notes","Archive Status",Frequency,"Start Reference Period","End Reference Period","Total number of dimensions"
+"Crimes, by actual offences",35100131,252-0001,"https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3510013101",1,"ARCHIVED -  a cube publicly available but no longer being updated",Annual,1962-01-01,2000-01-01,2
+
+"Dimension ID","Dimension name","Dimension Notes","Dimension Definitions"
+1,Geography,,
+2,"Type of offence",1,
+
+"Dimension ID","Member Name","Classification Code","Member ID","Parent Member ID",Terminated,"Member Notes","Member Definitions"
+1,Canada,,1,,,,
+1,"Newfoundland and Labrador",,2,1,,,
+1,"Prince Edward Island",,3,1,,,
+1,"Nova Scotia",,4,1,,,
+1,"New Brunswick",,5,1,,,
+1,Quebec,,6,1,,,
+1,Ontario,,7,1,,,
+1,Manitoba,,8,1,,,
+1,Saskatchewan,,9,1,,,
+1,Alberta,,10,1,,,
+1,"British Columbia",,11,1,,,
+1,"Yukon and Northwest Territories",,12,1,,,
+1,Yukon,,13,1,,,
+1,"Northwest Territories including Nunavut",,14,1,,,
+1,"Northwest Territories",,15,1,,,
+1,Nunavut,,16,1,,,
+2,"All offences, total",,1,,,,
+2,"Criminal Code, total",,2,1,,,
+2,"Crimes of violence",,3,2,,,
+2,Murder,,4,3,,,
+2,"Attempted murder",,5,3,,,
+2,Manslaughter,,6,3,,,
+2,Robbery,,7,3,,,
+2,"Other violent crimes",,8,3,,,
+2,"Property crimes",,9,2,,,
+2,"Breaking and entering",,10,9,,,
+2,"Theft, motor vehicle",,11,9,,,
+2,"Theft, over and under",,12,9,,,
+2,"Have stolen goods",,13,9,,,
+2,Frauds,,14,9,,,
+2,"Other crimes",,15,2,,,
+2,Prostitution,,16,15,,,
+2,"Gaming and betting",,17,15,,,
+2,"Offensive weapons",,18,15,,,
+2,"Other Criminal Code",,19,15,,,
+2,"Federal Statutes",,20,1,,,
+2,"Provincial Statutes",,21,1,,,
+2,"Municipal By-Laws",,22,1,,,
+2,"Sexual assault",,23,8,,,
+2,"Aggravated sexual assault",,24,23,,,
+2,"Sexual assault with a weapon, bodily harm",,25,23,,,
+2,"Sexual assault, level 1",,26,23,,,
+2,Assault,,27,8,,,
+2,"Assault, level 1",,28,27,,,
+2,"Assault with weapon, bodily harm",,29,27,,,
+2,"Aggravated assault",,30,27,,,
+2,"Other violent crimes, not elsewhere specified",,31,8,,,
+
+Symbol Legend
+Description,Symbol
+"not available for a specific reference period",..
+"less than the limit of detection",<LOD
+"value rounded to 0 (zero) where there is a meaningful distinction between true zero and the value that was rounded",0s
+"data quality: excellent",A
+"data quality: very good",B
+"data quality: good",C
+"data quality: acceptable",D
+"use with caution",E
+"too unreliable to be published.",F
+"not applicable",...
+preliminary,p
+revised,r
+"suppressed to meet the confidentiality requirements of the Statistics Act",x
+terminated,t
+
+"Survey Code","Survey Name"
+3302,"Uniform Crime Reporting Survey"
+
+"Subject Code","Subject Name"
+35,"Crime and justice"
+
+"Note ID",Note
+1,"Beginning 1983, provincial statutes and municipal by-laws are no longer included in the ""all offences, total, Canada""."
+
+"Correction ID","Correction Date","Correction Note"
+
