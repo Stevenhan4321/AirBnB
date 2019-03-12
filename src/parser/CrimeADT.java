@@ -38,7 +38,7 @@ public class CrimeADT {
 	
 	@Override
 	public String toString() {
-		return String.format("Id: %s, Offence %s, Residence %s, Longitutde: %d, Latitude: %d", id, offence, residence, longitude, latitude);
+		return "id:" + id + " offence:" + offence + " residence:" + residence + " longitutde:" + longitude + " latitude:" +latitude;
 	}
 	
 	
