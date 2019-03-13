@@ -25,7 +25,7 @@ public class mergesort {
 				arr[i] = aux[left++];
 		}
 	}
-	
+	// i = size
 	public static void sortId(CrimeADT[] x, int n) {
 		aux = new CrimeADT[n];
 		for (int i = 1; i < n; i = i + i)
