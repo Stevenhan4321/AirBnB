@@ -3,7 +3,7 @@ package parser;
 
 public class quicksort {
 	public static void sortBasicQuick_Id(CrimeADT[] x) {
-		shuffle(x);fff
+		shuffle(x);
 		sort_Id(x, 0, x.length - 1);
 		assert isSorted_Id(x, 0, x.length - 1);
 	}
