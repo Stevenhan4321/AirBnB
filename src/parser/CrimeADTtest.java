@@ -18,8 +18,8 @@ public class CrimeADTtest {
 
 	@Test
 	public void testCrimeADT() {
-		CrimeADT crime1 = new CrimeADT("123", "theft", "residence", 1.32, 3.24);
-		CrimeADT crime2 = new CrimeADT("223", "theft", "house", 2.32, 4.24);
+		CrimeADT crime1 = new CrimeADT("123", "theft", "residence", 1.32, 3.24,0);
+		CrimeADT crime2 = new CrimeADT("223", "theft", "house", 2.32, 4.24,1);
 		System.out.println(crime1.getId());
 		System.out.println(crime1.getOffence());
 		System.out.println(crime1.getResidence());
@@ -30,8 +30,8 @@ public class CrimeADTtest {
 
 	@Test
 	public void testCompare() {
-		CrimeADT crime1 = new CrimeADT("123", "theft", "residence", 1.32, 3.24);
-		CrimeADT crime2 = new CrimeADT("223", "theft", "house", 2.32, 4.24);
+		CrimeADT crime1 = new CrimeADT("123", "theft", "residence", 1.32, 3.24,0);
+		CrimeADT crime2 = new CrimeADT("223", "theft", "house", 2.32, 4.24,1);
 		
 		assertTrue(crime1.compareId(crime2)<0);
 		assertTrue(crime1.compareOffence(crime2)==0);

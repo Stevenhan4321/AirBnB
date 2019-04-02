@@ -8,13 +8,13 @@ import org.junit.Test;
 
 public class SearchTest {
 
-	CrimeADT crime1 = new CrimeADT("P1", "C1", "Residence", 1.32, 1.24);
-	CrimeADT crime2 = new CrimeADT("P2", "C2", "House", 2.32, 2.24);
-	CrimeADT crime3 = new CrimeADT("P3", "C3", "School", 6.32, 4.24);
-	CrimeADT crime4 = new CrimeADT("P4", "C4", "Mall", 8.32, 13.24);	
-	CrimeADT crime5 = new CrimeADT("P5", "C5", "School", 12.32, 14.24);	
-	CrimeADT crime6 = new CrimeADT("P6", "C6", "School", 23, 214.24);	
-	CrimeADT crime7 = new CrimeADT("P7", "C7", "Mall", 77.43, 644.24);	
+	CrimeADT crime1 = new CrimeADT("P1", "C1", "Residence", 1.32, 1.24,0);
+	CrimeADT crime2 = new CrimeADT("P2", "C2", "House", 2.32, 2.24,1);
+	CrimeADT crime3 = new CrimeADT("P3", "C3", "School", 6.32, 4.24,2);
+	CrimeADT crime4 = new CrimeADT("P4", "C4", "Mall", 8.32, 13.24,3);	
+	CrimeADT crime5 = new CrimeADT("P5", "C5", "School", 12.32, 14.24,4);	
+	CrimeADT crime6 = new CrimeADT("P6", "C6", "School", 23, 214.24,5);	
+	CrimeADT crime7 = new CrimeADT("P7", "C7", "Mall", 77.43, 644.24,6);	
 
 	CrimeADT[] test = {crime1, crime2, crime3, crime4, crime5, crime6, crime7};
 	

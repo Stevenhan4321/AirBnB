@@ -16,6 +16,7 @@ public class ParserTest {
 	@Before
 	public void setUp() throws Exception {
 		crimeList = Parser.csvParser();
+		System.out.println(crimeList.size()/2);
 		testList = Parser.csvParser(20);
 	}
 

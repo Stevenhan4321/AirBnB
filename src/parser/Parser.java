@@ -21,6 +21,7 @@ public class Parser {
 		BufferedReader reader = null;
 		String line = "";
 		String csvSplitter = ",";
+		int count = 0;
 
 		try {
 			reader = new BufferedReader(new FileReader("data/Crimes_-_2018.csv"));
@@ -41,7 +42,7 @@ public class Parser {
 					continue;
 				} else {
 					//System.out.println(i++);
-					crimeList.add(new CrimeADT(crime[0],crime[5], crime[7], Double.parseDouble(crime[19]),Double.parseDouble(crime[20])));
+					crimeList.add(new CrimeADT(crime[0],crime[5], crime[7], Double.parseDouble(crime[19]),Double.parseDouble(crime[20]), count++));
 				}
 				
 				
@@ -62,6 +63,7 @@ public class Parser {
 		BufferedReader reader = null;
 		String line = "";
 		String csvSplitter = ",";
+		int count = 0;
 		
 			try {
 				reader = new BufferedReader(new FileReader("data/Crimes_-_2018.csv"));
@@ -83,7 +85,7 @@ public class Parser {
 						continue;
 					} else {
 						//System.out.println(i++);
-						crimeList.add(new CrimeADT(crime[0],crime[5], crime[7], Double.parseDouble(crime[19]),Double.parseDouble(crime[20])));
+						crimeList.add(new CrimeADT(crime[0],crime[5], crime[7], Double.parseDouble(crime[19]),Double.parseDouble(crime[20]),count++));
 					}
 					
 					}
