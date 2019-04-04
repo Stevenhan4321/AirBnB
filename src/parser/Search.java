@@ -2,6 +2,32 @@ package parser;
 
 public class Search {
 
+	static int searchNodeId(CrimeADT arr[], int l, int r, int d) {
+
+		if (r >= l) {
+			int mid = l + (r - l) / 2;
+
+			// If the element is present at the
+			// middle itself
+			if (arr[mid].getLatitude() == d)
+				return mid;
+
+			// If element is smaller than mid, then
+			// it can only be present in left subarray
+			if (arr[mid].getLatitude() > d)
+				return searchLatitude(arr, l, mid - 1, d);
+
+			// Else the element can only be present
+			// in right subarray
+			return searchLatitude(arr, mid + 1, r, d);
+		}
+
+		// We reach here when element is not present
+		// in array
+		return -1;
+	}
+
+	
 	static int searchId(CrimeADT[] arr, String x) {
 		int l = 0, r = arr.length - 1;
 		while (l <= r) {

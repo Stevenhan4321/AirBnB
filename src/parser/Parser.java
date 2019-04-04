@@ -107,10 +107,10 @@ public class Parser {
 		// TODO Auto-generated method stub
 		ArrayList<CrimeADT> crimeList = csvParser();
 		
-//		System.out.println(crimeList.size());
-//		for (int i =0; i < crimeList.size() ; i++) {
-//			System.out.println(crimeList.get(i));
-//		}
+		System.out.println(crimeList.size());
+		for (int i =0; i < crimeList.size() ; i++) {
+			System.out.println(crimeList.get(i));
+		}
 		
 	}
 
