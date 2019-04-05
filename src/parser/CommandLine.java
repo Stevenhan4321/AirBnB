@@ -10,6 +10,11 @@ import help.Edge;
 
 public class CommandLine {
 
+	/**
+	 * Main function that runs the Command Line Interpreter
+	 * @param args Arguments provided by the user
+	 * @throws IOException thrown when the file is not found
+	 */
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 		
@@ -92,7 +97,6 @@ public class CommandLine {
 				}
 				
 			} else if(option == 2) {
-	//			System.out.print("INPUT GRAPH ALGORITHM");
 				System.out.print("Enter Node ID 1\n");
 //				Scanner user_node1 = new Scanner(System.in);
 				node_1 = in.nextInt();

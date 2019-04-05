@@ -23,9 +23,6 @@ public class Graph {
 			int v = crimeList.get(i-2).getNodeId();
 			int w = crimeList.get(i).getNodeId();
 			double weight = 1.0;
-//			int v = Parser.searchByName(adjacentCities.get(i)[0]).getId();
-//			int w = Parser.searchByName(adjacentCities.get(i)[1]).getId();
-//			double weight = Parser.calculateEdgeWeight(v, w);
 			Edge e = new Edge(v,w,weight);
 			addEdge(e);
 		}
@@ -34,9 +31,6 @@ public class Graph {
 			int v = crimeList.get(i-1).getNodeId();
 			int w = crimeList.get(i).getNodeId();
 			double weight = 1.0;
-//			int v = Parser.searchByName(adjacentCities.get(i)[0]).getId();
-//			int w = Parser.searchByName(adjacentCities.get(i)[1]).getId();
-//			double weight = Parser.calculateEdgeWeight(v, w);
 			Edge e = new Edge(v,w,weight);
 			addEdge(e);
 		}
@@ -88,9 +82,7 @@ public class Graph {
 	        s.append(V + " " + E + "\n");
 	        for (int v = 0; v < 1000; v++) {
 	            s.append(v + ": ");
-	//           s.append(cityList.get(v).getName() + ": ");
 	            for (Edge e : adjacencyList[v]) {
-	//            	s.append(cityList.get(e.either()).getName() + "  ");
 	                s.append(e + "  ");
 	            }
 	            s.append("\n");
@@ -104,7 +96,6 @@ public class Graph {
     }
 	
 	public static void main(String[] args) throws IOException {
-//		ArrayList<String[]> adjacentCities = Parser.adjacentCityParser();
 		Graph G = new Graph();
 		System.out.println(G);
 	}

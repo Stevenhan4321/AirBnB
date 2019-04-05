@@ -1,0 +1,35 @@
+References Used:
+
+https://algs4.cs.princeton.edu/code/edu/princeton/cs/algs4/Bag.java.html
+https://algs4.cs.princeton.edu/code/edu/princeton/cs/algs4/EdgeWeightedGraph.java.html
+https://algs4.cs.princeton.edu/code/edu/princeton/cs/algs4/IndexMinPQ.java.html
+https://algs4.cs.princeton.edu/code/edu/princeton/cs/algs4/Queue.java.html
+https://algs4.cs.princeton.edu/code/edu/princeton/cs/algs4/Stack.java.html
+https://algs4.cs.princeton.edu/code/edu/princeton/cs/algs4/Graph.java.html
+https://algs4.cs.princeton.edu/code/edu/princeton/cs/algs4/Merge.java.html
+https://algs4.cs.princeton.edu/code/edu/princeton/cs/algs4/BinarySearch.java.html
+https://algs4.cs.princeton.edu/code/edu/princeton/cs/algs4/DijkstraSP.java.html
+2XB3 Assignment 1 - jethwap
+2XB3 Assignment 2 - jethwap
+2XB3 Labs Slides
+2XB3 Lecture Slides
+Algorithms, 4th Edition by Robert Sedgewick and Kevin Wayne
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

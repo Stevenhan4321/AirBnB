@@ -66,7 +66,7 @@ public class ShortestPath {
 	
 	/**
 	 * Checks if there is a pathTo the given id
-	 * @param v - int - Id of the City
+	 * @param v - int - Id of the Crime
 	 * @return boolean - checks if there is some value in distTo[v]
 	 */
 	public boolean hasPathTo(int v) {
@@ -74,9 +74,9 @@ public class ShortestPath {
 	}
 	
 	/**
-	 * Returns the distance To the city based on city id
-	 * @param v - int - Id of the City
-	 * @return double - Distance to the city based on the city id
+	 * Returns the distance To the Crime based on node id
+	 * @param v - int - Id of the Crime
+	 * @return double - Distance to the Crime based on the crime id
 	 */
 	public double distTo(int v) {
 		return distTo[v];
@@ -84,7 +84,7 @@ public class ShortestPath {
 	
 	/**
 	 * Computes the pathTo a given id
-	 * @param v -  int - Id of the City
+	 * @param v -  int - Id of the Crime
 	 * @return Iterable<Integer> - Contains the pathTo from source node to every other node
 	 */
 	public Iterable<Edge> pathTo(int v){
@@ -108,13 +108,9 @@ public class ShortestPath {
 		int s = 0;
 		ShortestPath sp = new ShortestPath(G, s);
 		
-//		for (int v = 0; v < G.V(); v++) {
 		for (int v = 0; v < 1000; v++) {
 			if (sp.hasPathTo(v)) {
-				
 				System.out.printf("%d to %d (%.2f)", s, v, sp.distTo(v));
-//				System.out.printf("%s to %s (%.2f)", cityList.get(s).getName(), cityList.get(v).getName(), sp.distTo(v));
-				
 				for (Edge e : sp.pathTo(v)) {	
 					System.out.print(e + " ");
 				}

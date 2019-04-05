@@ -32,19 +32,13 @@ public class ShortestPathTest {
 		String stringBuilder = "";
 		if (sp.hasPathTo(v)) {
 				stringBuilder += s + " to " + v + " (25.00)";
-//				System.out.printf("%d to %d (%.2f)", s, v, sp.distTo(v));
-//				System.out.printf("%s to %s (%.2f)", cityList.get(s).getName(), cityList.get(v).getName(), sp.distTo(v));
-				
 				for (Edge e : sp.pathTo(v)) {	
 					stringBuilder += e + " ";
-//					System.out.print(e + " ");
 				}
 				stringBuilder += "\n";
-//				System.out.println();
 		}
 		else {
 				stringBuilder += s + " to " + v + " no shortestPath\n";
-//				System.out.printf("%d to %d no shortestPath\n",s,v);
 		}
 		
 		System.out.println(stringBuilder);

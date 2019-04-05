@@ -9,6 +9,15 @@ public class CrimeADT {
 	private double latitude;
 	private int nodeId;
 	
+	/**
+	 * Creates a CrimeADT object
+	 * @param id - Contains Identification Number of Crime
+	 * @param offence - Contains type of offence of the crime
+	 * @param residence - Contains the residence of the crime
+	 * @param longitude - Contains the longitude of the crime
+	 * @param latitude - Contains the latitude of the crime
+	 * @param nodeId - Contains the nodeId used for graphing algorithm
+	 */
 	public CrimeADT(String id, String offence, String residence, double longitude, double latitude, int nodeId) {
 		this.id = id;
 		this.offence = offence;
@@ -17,37 +26,63 @@ public class CrimeADT {
 		this.latitude = latitude;
 		this.nodeId = nodeId;
 	}
-	
+
+	/**
+	 * Getter Method - Returns the ID of the Crime
+	 * @return String - ID of the Crime
+	 */
 	public String getId() {
 		return this.id;
 	}
 	
+	/**
+	 * Getter Method - Returns the type of offence of the crime
+	 * @return String - type of offence of the crime
+	 */
 	public String getOffence() {
 		return this.offence;
 	}
 	
+	/**
+	 * Getter Method - Returns the residence of the crime
+	 * @return String - residence of the crime
+	 */
 	public String getResidence() {
 		return this.residence;
 	}
 	
+	/**
+	 * Getter Method - Returns the longitude of the crime
+	 * @return double - longitude of the crime
+	 */
 	public double getLongitude() {
 		return this.longitude;
 	}
 	
+	/**
+	 * Getter Method - Returns the latitude of the crime
+	 * @return double - latitude of the crime
+	 */
 	public double getLatitude() {
 		return this.latitude;
 	}
 	
+	/**
+	 * Getter Method - Returns the nodeId used for graphing algorithm
+	 * @return int - nodeId used for graphing algorithm
+	 */
 	public int getNodeId() {
 		return this.nodeId;
 	}
 	
+	/**
+	 * Return the String formatting when printing the CrimeADT Object
+	 * @return String - Contains the formatting when printing the Object
+	 */
 	@Override
 	public String toString() {
 		return "id:" + id + " offence:" + offence + " residence:" + residence + " longitutde:" + longitude + " latitude:" +latitude + " nodeId:" + nodeId;
 	}
-	
-	
 	
 	public int compareId(CrimeADT that) {
 		if (this.id.compareTo(that.getId()) < 0)
