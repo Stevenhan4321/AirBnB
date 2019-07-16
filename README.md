@@ -1,3 +1,1 @@
-# AirBnB (2XB3 Project 2019 Group whatever)
-
-This is a project for the course SFWR ENG: 2XB3
+Navigation application for determining the shortest path between two destinations while avoiding crime sites 
